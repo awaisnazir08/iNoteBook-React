@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+// import React, {useContext, useEffect} from 'react';
 // import noteContext from '../context/notes/noteContext';
 const About = () => {
 
@@ -10,4 +10,4 @@ const About = () => {
     )
 }
 
-export default About
+export default About;

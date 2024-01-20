@@ -3,7 +3,7 @@ import React from 'react'
 const Alert = (props) => {
     return (
         <div>
-            <div class="alert alert-info" role="alert">
+            <div className="alert alert-info" role="alert">
                 {props.message}
             </div>
         </div>
