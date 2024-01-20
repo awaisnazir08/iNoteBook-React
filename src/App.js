@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import React from "react";
+import Alert from './components/Alert';
 import NoteState from "./context/notes/NoteState"; 
 import {
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ function App() {
     <NoteState>
       <Router>
         <Navbar />
+        <Alert message = {"Hello my friend"}/>
         <div className="container">
         <Routes>
           <Route exact path='/' element={<Home />} />
