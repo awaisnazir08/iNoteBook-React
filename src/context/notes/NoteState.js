@@ -71,14 +71,14 @@ const NoteState = (props) => {
         let newNotes = JSON.parse(JSON.stringify(notes));
         //Logic to edit in client
         for (let index = 0; index < newNotes.length; index++) {
-            const element = newNotes[index];
-            if (element._id === id) {
-                element.title = title;
-                element.description = description;
-                element.tag = tag;
+            // const element = newNotes[index];
+            if (newNotes[index]._id === id) {
+                newNotes[index].title = title;
+                newNotes[index].description = description;
+                newNotes[index].tag = tag;
+                setNotes(newNotes);
                 break;
             }
-            setNotes(newNotes);
         }
     }
 
