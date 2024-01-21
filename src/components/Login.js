@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
-const Login = () => {
-
+const Login = (props) => {
+    let navigate = useNavigate();
     const [credentials, setCredentials]= useState({email: "", password: ""});
+
     const handleSubmit = async (e) => {
         //to avoid reloading of the screen
         e.preventDefault();
@@ -15,6 +17,17 @@ const Login = () => {
         });
         const json = await response.json();
         console.log(json);
+        if(json.success)
+        {
+            //save the auth token and redirect
+            localStorage.setItem('token', json.authtoken)
+            navigate("/");
+            props.showAlert("Logged in Successfully..!!", "info")
+        }
+        else
+        {
+            props.showAlert("Invalid credentials..!!", "danger")
+        }
     }
 
     const onChange = (e) => {
@@ -22,10 +35,11 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className='mt-3'>
+            <h2>Login to use the iNotebook application</h2>
             <form  onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="emaillabel" className="form-label">Email address</label>
+                    <label htmlFor="emaillabel" className="form-label mt-3">Email address</label>
                     <input type="email" className="form-control" name="email" onChange = {onChange} value = {credentials.email} id="email" aria-describedby="emailHelp" />
                     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
