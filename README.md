@@ -37,6 +37,34 @@ npm install concurrently
 npm run both
 ```
 
+# Backend (Node.js) Modules
+express: Web application framework for Node.js
+mongoose: MongoDB object modeling for Node.js
+jsonwebtoken: JSON Web Token implementation for authentication
+bcrypt: Password hashing library
+concurrently: Run multiple npm scripts concurrently
+
+# Frontend (React.js) Modules
+react: JavaScript library for building user interfaces
+react-router-dom: Declarative routing for React.js
+axios: Promise-based HTTP client for the browser and Node.js
+react-bootstrap: Bootstrap components as React components
+react-toastify: Notification library for React.js applications
+
+# Screenshots
+
+### Home Page
+
+![Home](public/inotebook.png)
+
+### Login Page
+
+![Login](public/login.png)
+
+### Signup Page
+
+![Signup](public/signup.png)
+
 
 # Getting Started with Create React App
 
