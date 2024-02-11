@@ -25,7 +25,8 @@ Make sure you have the following installed on your machine:
    cd iNotebook
 
 
-
+## Install dependencies for both backend and frontend
+`npm install`
 
 
 # Getting Started with Create React App
