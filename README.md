@@ -39,7 +39,7 @@ To ensure that concurrently works properly, update the `package.json` of the fro
 ## Example
  `"both": "concurrently \"npm start\" \"nodemon backend/index.js\""`
 
-Now run ono the terminal: 
+Now run in the terminal: 
 ```bash
 npm run both
 ```
