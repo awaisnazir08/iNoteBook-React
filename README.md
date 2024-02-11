@@ -26,7 +26,16 @@ Make sure you have the following installed on your machine:
 
 
 ## Install dependencies for both backend and frontend
-`npm install`
+```bash
+npm install
+```
+
+## Running the App
+This command requires `concurrently` to be downloaded so both the back-end and front-end servers can run simultaneously
+```bash
+npm install concurrently
+npm run both
+```
 
 
 # Getting Started with Create React App
