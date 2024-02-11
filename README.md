@@ -1,3 +1,33 @@
+# iNotebook App
+
+Welcome to iNotebook, a web application for managing your notes. This app is built using MongoDB, React.js, Node.js, HTML, and CSS.
+
+## Features
+
+- User authentication with JWT token
+- Login and signup functionality
+- Add, update, and delete notes
+- Interactive user interface
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js
+- MongoDB
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/awaisnazir08/iNotebook-React.git
+   cd iNotebook
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
