@@ -34,9 +34,15 @@ npm install
 This command requires `concurrently` to be downloaded so both the back-end and front-end servers can run simultaneously
 ```bash
 npm install concurrently
+```
+To ensure that concurrently works properly, update the `package.json` of the front-end react module.
+## Example
+ `"both": "concurrently \"npm start\" \"nodemon backend/index.js\""`
+
+Now run ono the terminal: 
+```bash
 npm run both
 ```
-
 # Backend (Node.js) Modules
 express: Web application framework for Node.js
 mongoose: MongoDB object modeling for Node.js
